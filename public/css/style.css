@@ -1,0 +1,191 @@
+body
+{
+    background-color: rgb(161, 10, 10);
+    /* background-image: url("../media/arc_reactor.png") */
+    /* background-image: url("../media/scenic.jpg") */
+    /* background-color: rgb(238, 204, 55); */
+}
+
+nav
+{
+    /* display: inline-block;
+    height: 50px;
+    width: 750px;
+    border: 5px dashed black;
+    margin-left: 25%;
+    text-align: center; */
+    /* background-color: rgb(204, 231, 181); */
+    background-color: rgb(213, 216, 24);
+    list-style-type: none;
+    text-align: center; 
+    padding: 0;
+    margin: 0;
+}
+
+li
+{
+    /* list-style-type: none;
+    margin: 0;
+    padding: 0; */
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+a
+{
+    display: inline-block;
+    height: 40px;
+    width: 125px; 
+    font-size: 25px;
+    text-decoration: none;
+    color: rgb(63, 60, 60);
+}
+
+main
+{
+    display: inline-block;
+    height: 800px;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 150px;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+img
+{
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+}
+
+.home
+{
+    display: block;
+    height: 400px;
+    width: 1000px;
+    margin: auto;
+}
+
+h1
+{
+    text-align: center;
+    /* color:rgb(0, 0, 0); */
+    color: rgb(51, 183, 235);
+}
+
+h2
+{
+    display: block;
+    height: 40px;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(213, 216, 24);
+    text-align: center;
+    padding: 10px;
+}
+
+p
+{
+    display: block;
+    height: 200px;
+    width: 100%;
+    /* color: rgb(0, 0, 0); */
+    color: rgb(51, 183, 235);
+    text-align: center;
+    font-size: 20px;
+}
+
+aside
+{
+    display: block;
+    height: 675px;
+    width: 250px;
+    float: left;
+    border: 5px solid black;
+    position: fixed;
+}
+
+.login
+{
+    display: block;
+    height: 50px;
+    width: 125px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid rgb(213, 216, 24);
+}
+
+footer
+{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.p_footer
+{
+    margin-left: 10px;
+    float: left;
+}
+
+.section_footer
+{
+    margin-right: 10px;
+    float: right;
+}
+
+.a_footer
+{ 
+    margin-left: 10px;
+}
+
+i
+{
+    color:rgb(0, 0, 0);
+}
+
+i:hover
+{
+    color:rgb(202, 173, 109);
+}
+
+#books_img
+{
+    display: block;
+    height: 508.16px;
+    width: 350px;
+
+}
+#games_img
+{
+    display: block;
+    height: 450px;
+    width: 300px;
+}
+#movies_img
+{
+    display: block;
+    height: 300px;
+    width: 534.83px;
+}
+#music_img
+{
+    display: block;
+    height: 500px;
+    width: 755.86px;
+}
+#shows_img
+{
+    display: block;
+    height: 612.5px;
+    width: 416px;
+}
