@@ -5,11 +5,6 @@ const session = require("express-session");
 const passport = require("passport");
 require("./auth");
 
-//create express app
-//const app = new express();
-
-
-
 // Define a Middleware function to check if the user is already logged in
 // The next param. is pointing to the next end-point to go to, once the middleware function is done executing
 function isLoggedIn(req, res, next) {
@@ -55,8 +50,6 @@ app.get(
 
 // Create a protected route for successful redirect -- Users won't be able to access this route unless successfully logged in.
 app.get("/protected", isLoggedIn, (req, res) => {
-    //   res.send("You are now logged in");
-    //res.send(`Hello.... ${req.user.displayName}`);
     res.render("index");
   });
 
@@ -69,24 +62,15 @@ app.get("/auth/failure", (req, res) => {
   app.get("/logout", (req, res) => {
     req.logout();
     req.session.destroy();
-    res.send("You have been successfully logged out... Goodbye!");
+    res.send("You have been successfully logged out");
   });
   
-//create a protected route
-// app.get('/protected', (req, res) => {
-//     res.send("This is a Protected Page");
-// });
-
 app.get("/books", (req, res) => {
     res.render("./html/books");
 });
 
 app.get("/games", (req, res) => {
     res.render("./html/games");
-});
-
-app.get("/login", (req, res) => {
-    res.render("./html/login");
 });
 
 app.get("/movies", (req, res) => {
@@ -100,6 +84,7 @@ app.get("/music", (req, res) => {
 app.get("/tvShows", (req, res) => {
     res.render("./html/tvShows");
 });
+
 //Start Server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {console.log(`Server Started on Port No. ${PORT}`);});
