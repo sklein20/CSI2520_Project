@@ -11,7 +11,7 @@ passport.use(
       // Connection Confguration to Google authentication
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://localhost:3000/google/callback",
+      callbackURL: "https://shrouded-island-60690.herokuapp.com/google/callback",
       passReqToCallback: true,
     },
     // What to do once the user is successfully authenticated
